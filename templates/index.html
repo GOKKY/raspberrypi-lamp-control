@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Lampensteuerung</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 100px; }
+        button { font-size: 2rem; padding: 1rem 2rem; margin: 1rem; }
+    </style>
+</head>
+<body>
+    <h1>Lampe ist aktuell: {{ '💡 Eingeschaltet' if lamp_on else '❌ Ausgeschaltet' }}</h1>
+    <form action="/on"><button type="submit">Einschalten</button></form>
+    <form action="/off"><button type="submit">Ausschalten</button></form>
+    <form action="/toggle"><button type="submit">Umschalten</button></form>
+</body>
+</html>
