@@ -18,7 +18,7 @@ Ein kleines Projekt zur webbasierten Steuerung einer 230V-LED-Lampe mithilfe ein
 ## 📸 Bilder
 → siehe Screenshots unten
 
-## ▶️ Demo-Video
+## ▶️ Video-Demonstration
 https://drive.google.com/drive/folders/19sxTEfdCkhwktAYUBsZ23fFq9lttW4iJ
 
 ## 📁 Dateien
