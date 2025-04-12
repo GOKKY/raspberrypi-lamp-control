@@ -39,10 +39,5 @@ def toggle():
         lamp_state = True
     return redirect(url_for('index'))
 
-@app.route('/cleanup')
-def cleanup():
-    GPIO.cleanup()
-    return "GPIO cleaned up"
-
 if __name__ == '__main__':
-    app.run(host='192.168.178.154', port=5000)
+    app.run(host='0.0.0.0', port=5000)
