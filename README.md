@@ -1,6 +1,6 @@
 # Raspberry Pi Lamp Control 💡
 
-Ein kleines Projekt zur webbasierten Steuerung einer 230V-LED-Lampe mithilfe eines Raspberry Pi 5, einem Solid-State-Relais und einem Flask-Webinterface.
+Ein kompaktes DIY-Projekt zur webbasierten Steuerung einer 230 V-LED-Lampe mit einem Raspberry Pi 5, einem 2-Kanal Solid-State-Relais (G3MB-202P) und einem einfachen Flask-Webinterface.
 
 ## 🔧 Verwendete Komponenten
 - Raspberry Pi 5 (ohne GUI, headless)
@@ -8,6 +8,25 @@ Ein kleines Projekt zur webbasierten Steuerung einer 230V-LED-Lampe mithilfe ein
 - 230V LED-Lampe
 - Python 3 + Flask
 - HTML für Benutzeroberfläche
+
+## ⚙️ Anschlussübersicht:
+🔌 230 V-Teil (AC-Seite):
+Steckdose (L/N): Externe Stromversorgung für die Lampe.
+
+Phase (L):
+→ Wird in das Relais (SW1) geführt.
+→ Vom Relaisausgang (SW1) zur Fassung der Lampe (zusätzliche Phase).
+
+Neutralleiter (N): Direkt von der Steckdose zur Lampenfassung.
+
+⚡ Relaismodul (DC-Steuerseite, vom Raspberry Pi):
+-DC+ → Pin 2 (5 V)
+
+-DC– → Pin 6 (GND)
+
+-CH1 → Pin 11 (GPIO 17)
+
+📷 Das detaillierte Anschluss-Schema ist auf den Fotos weiter unten ersichtlich.
 
 ## 🌐 Funktionen
 - Einschalten / Ausschalten / Umschalten über Webinterface
@@ -29,3 +48,8 @@ https://drive.google.com/drive/folders/19sxTEfdCkhwktAYUBsZ23fFq9lttW4iJ
 ## 📁 Dateien
 - `app.py`: Flask-App für GPIO-Steuerung
 - `templates/index.html`: Webinterface
+
+## 🛠️ Sicherheitshinweis:
+Der Umgang mit 230 V Netzspannung ist lebensgefährlich, wenn unsachgemäß durchgeführt. 
+Nur unter Aufsicht oder mit entsprechender Erfahrung umsetzen! 
+Alle Verbindungen isolieren und bei Möglichkeit mit Trenntransformator arbeiten.
