@@ -11,20 +11,21 @@ Ein kompaktes DIY-Projekt zur webbasierten Steuerung einer 230 V-LED-Lampe mit
 
 ## ⚙️ Anschlussübersicht:
 🔌 230 V-Teil (AC-Seite):
-Steckdose (L/N): Externe Stromversorgung für die Lampe.
+- Steckdose (L/N): Externe Stromversorgung für die Lampe.
 
 Phase (L):
 → Wird in das Relais (SW1) geführt.
 → Vom Relaisausgang (SW1) zur Fassung der Lampe (zusätzliche Phase).
 
-Neutralleiter (N): Direkt von der Steckdose zur Lampenfassung.
+- Neutralleiter (N): Direkt von der Steckdose zur Lampenfassung.
 
 ⚡ Relaismodul (DC-Steuerseite, vom Raspberry Pi):
--DC+ → Pin 2 (5 V)
 
--DC– → Pin 6 (GND)
+- DC+ → Pin 2 (5 V)
 
--CH1 → Pin 11 (GPIO 17)
+- DC– → Pin 6 (GND)
+
+- CH1 → Pin 11 (GPIO 17)
 
 📷 Das detaillierte Anschluss-Schema ist auf den Fotos weiter unten ersichtlich.
 
